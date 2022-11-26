@@ -30,7 +30,7 @@ module.exports = (app)=> {
         //Создадим объект с опциями для письма
         let mailOptions = {
             from: '"inordic" <inordic2022@yandex.ru', // sender address
-            to: 'r-sasha@list.ru', // тут указываем адресс менеджера
+            to: 'mukhamaddier2001@yandex.ru', // тут указываем адресс менеджера
             subject: 'Письмо от магазина InordicShoop', // Subject line
             html: messageToManager // html body
         };

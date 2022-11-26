@@ -42,12 +42,12 @@ app.get(
                 <ul> 
                     <li>
                         <a href='/get_all_good'>
-                            2 - Маршрут для получения всех товаров
+                            1 - Маршрут для получения всех товаров
                         </a>
                     </li>
                     <li>
                         <a href='/get_item?id=1'>
-                            3 - Маршрут для получения всех товаров
+                            2 - Маршрут для получения всех товаров
                         </a>
                     </li>
                     <li>
@@ -72,7 +72,7 @@ app.get(
                     </li>
                     <li>
                     <a href='/mail/form'>
-                        7 - Маршрут для отправки сообщения админимтратору интренет-магазина
+                        7 - Маршрут для отправки сообщения админcтратору интренет-магазина
                     </a>
                 </li>
                 </ul>
@@ -98,6 +98,12 @@ require('./routes/user/edit-user')(app)
 
 //Роуты для отправки писем
 require('./routes/mail')(app)
+
+//Роуты для отзывов
+require('./routes/review/add-review')(app)
+require('./routes/review/edit-review')(app)
+require('./routes/review/get-all-reviews')(app)
+require('./routes/review/get-review')(app)
 
 //Начинаем прослушивать определенный порт
 app.listen(3000);

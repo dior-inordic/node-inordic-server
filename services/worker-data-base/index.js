@@ -149,4 +149,21 @@ module.exports = class WorkerDataBase{
         //this.response.send(sql);
         this.query(sql)
     }
+    delete(){
+        const sql = `DELETE * FROM ${this.name_table} WHERE ID='${id}'`;
+        console.log('Пользователь удален', this.delete)
+        if(error){
+            //Выводим ошибку
+            this.response.send(
+                error
+            )
+        //если ошибки нет
+        }else{
+            //отправляем результат запроса на экран
+            this.response.send(
+                //Предварительно, через метод JSON.stringify, преобразуем объект в строку JSON
+                JSON.stringify(result)
+            )
+        }
+    }
 }
