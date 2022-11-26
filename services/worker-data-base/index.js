@@ -151,7 +151,7 @@ module.exports = class WorkerDataBase{
     }
     delete(){
         const sql = `DELETE * FROM ${this.name_table} WHERE ID='${id}'`;
-        console.log('Пользователь удален', this.delete)
+        // console.log('Пользователь удален', this.delete)
         if(error){
             //Выводим ошибку
             this.response.send(
