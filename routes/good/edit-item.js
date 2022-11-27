@@ -6,7 +6,7 @@ const uploadFromForm = multer({dest: 'uploads/'})
 //Устанавливаем название файла на форме
 const fileFromForm = uploadFromForm.single('MYFILE')
 
-module.exports = (app, connect) => {
+module.exports = (app) => {
     /**
      * Маршрут для редактирования оного товара:
      * Автор: Ульмасбаев Мухамаддиёр

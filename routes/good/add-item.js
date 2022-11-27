@@ -8,7 +8,7 @@ const uploadFromForm = multer({dest: 'uploads/'})
 const fileFromForm = uploadFromForm.single('MYFILE')
 const uuid = require("uuid")
 
-module.exports = (app, connect) => {
+module.exports = (app) => {
     /**
      * Маршрут для добавления оного товара:
      * Автор: Ульмасбаев Мухамаддиёр

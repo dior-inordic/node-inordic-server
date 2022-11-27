@@ -7,7 +7,7 @@ const fileFromForm = uploadFromForm.single('MYFILE')
 
 const WorkerTableUser = require('../../services/worker-tables/users')
 
-module.exports = (app, connect) => {
+module.exports = (app) => {
 
     /**
      * Маршрут для добавления оного пользователя:
@@ -38,7 +38,7 @@ module.exports = (app, connect) => {
      })
 
     /**
-     * Вспомогательный маршрут для редактирование пользователя в БД
+     * Вспомогательный маршрут для редактирования пользователя в БД
      * Автор: Ульмасбаев Мухамаддиёр
      * Описание: Выводить форму на интерфейс для редактирования пользователя 
      * Версия: v1
